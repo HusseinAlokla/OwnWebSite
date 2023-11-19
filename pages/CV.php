@@ -64,7 +64,7 @@
           <div class="language-bar">
             <div class="language-progress english-progress"></div>
           </div>
-        </div>
+        </div> 
         
         <div class="language">
           <p class="my-class">Arabic</p>
