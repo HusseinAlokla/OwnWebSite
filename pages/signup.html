@@ -1,0 +1,88 @@
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/mStyle1.css"> 
+        <link rel="stylesheet" href="../css/Form.css"> 
+        <link rel="stylesheet" href="../css/icons.css"> 
+        
+        <title>
+            Sign Up
+        </title>
+    </head>
+    <body>
+        <div class="row header " >
+            
+        </div>
+        <div class="title">
+            <span>Sign Up</h1>
+        </div>        
+        
+    
+        <div class="paragraph" style="border:0;">
+            <form action="../BE/signup.php" method="POST" name="signup-form">
+                <label for="un">User Name</label>
+                <br>
+                <input type="text" name="username" class="txtfield">
+                <br>
+                <label for="un">Full Name</label>
+                <br>
+                <input type="text" name="fullname" class="txtfield">
+                <br>
+                <label for="pass">Password</label>
+                <br>
+                <input type="password" name="pass" class="txtfield">
+                <br>
+                <label for="pass">Confirm Password</label>
+                <br>
+                <input type="password" name="confirmPassword" class="txtfield">
+                
+                <br><br>
+                <input type="radio" name="sex" checked id="r-male" value="m">
+                <label for="r-male">Male</label>
+                <input type="radio" name="sex" id="r-female" value="f">
+                <label for="r-female">Female</label>
+                <br><br>
+               
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required required max="9999-12-31">
+                <br><br>
+                <input type="checkbox" name="cbcaptcha" id="cbcaptcha">
+                <label for="cbcaptcha">I am human</label>
+                <br>
+                <br>
+                <input type="button" value="Sign Up" class="mButton" onclick="SignUp()">
+                <input type="button" value="Cancel" class="mButton" onclick="ClearForm()">
+            </form>
+        </div>
+    
+<script>
+    function SignUp() {
+    var mForm = document.querySelector("form[name='signup-form']");
+    var username = mForm.elements["username"].value;
+    var password = mForm.elements["pass"].value;
+    var confirmPassword = mForm.elements["confirmPassword"].value;
+    var sex = mForm.elements["sex"].value;
+    var dob = mForm.elements["dob"].value;
+    var captcha = mForm.elements["cbcaptcha"].checked;
+
+    if (password != confirmPassword || password === "") {
+        alert("Passwords must be equal.");
+    } else {
+        mForm.submit();
+    }
+}
+    function ClearForm(){
+        var mForm=document.querySelector("form[name='signup-form']");
+        mForm.elements["username"].value="";
+        mForm.elements["fullname"].value="";
+        mForm.elements["dob"].value = '';
+        mForm.elements["pass"].value="";
+        mForm.elements["confirmPassword"].value="";
+        mForm.elements["sex"].value="m";
+        
+        mForm.elements["cbcaptcha"].checked=false;
+    }
+</script>
+</body>
+</html>

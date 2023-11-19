@@ -1,0 +1,128 @@
+h2{
+    text-decoration: underline;
+    color:#7a0800;
+}
+
+body{
+    margin: 0;
+}
+
+.paragraph{
+    margin: 5px;
+    font-size: 14px;
+    font-family: arial;
+    color: #395a3c;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px dashed #f44336;
+}
+.paragraph-blue{   
+    color: #1f63a0;
+    border-color: #05436a;
+}
+
+.row{
+    height: 40px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background:rgb(165, 125, 14);
+}
+
+#dropdown{
+    display: inline-block;
+    height: inherit;
+    cursor: pointer;
+    line-height: 40px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    background: #1c4a83;
+    color: white;
+    width: 80px;
+    text-align: center;
+   
+}
+
+.dropdown-content {  
+    display: none;
+    position: relative;
+    background-color: #1f3e68;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
+    z-index: 1;    
+  }
+
+  #dropdown .dropdown-item:hover{
+    background-color: rgb(15, 40, 73);
+  }
+  #dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #dropdown ul{
+    padding: 0;
+    margin: 0;
+  }
+  #dropdown li{
+    font-weight: normal;
+    list-style-type: none;
+    background: #174878;
+  }
+
+  .center-menu{
+    text-align: center;
+  }
+
+  .rtl-menu{
+    text-align: right;
+  }
+
+  .rtl-menu .dropdown-content{
+    float: right;
+  }
+
+  .dropdown-content a{  
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .row.header{
+    position: fixed;
+    top: 0;
+  }
+
+  .title{
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+ 
+
+  .table-header{
+    text-align: center;
+    font-weight: bold;
+   background: rgb(161, 161, 161);
+   color: white;
+  }
+
+  #user-welcome{
+    display: inline;
+    float: right;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-weight: bold;
+  }
+  #user-welcome a{
+    text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s;
+  }
+  #user-welcome a:hover{
+    color: #2980b9;
+  }

@@ -1,0 +1,47 @@
+.txtfield{
+    border-radius: 3px;
+    height: 25px;
+    font-size: 15px;
+    border: 1px solid #7b8184;
+    padding: 5px;
+    margin: 1px 0px 8px 0px;
+}
+
+label{
+    font-size: 16px;
+    color: #146780;
+}
+
+.mSelect{
+    border-radius: 3px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #7b8184;
+    padding: 5px;
+    margin: 1px 0px 8px 0px;
+    color: #116181;
+}
+.mButton{
+    padding: 8px;
+    background: #586163;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.mButton:hover{
+    background: transparent;
+    color: #146780;
+}
+input[type="date"] {
+    padding: 3px;
+    box-sizing: border-box;
+    border: 1px solid #7b8184;
+    border-radius: 4px;
+   
+}
+.imag-form{
+display: flex;
+text-align: center;
+justify-content: center;
+}

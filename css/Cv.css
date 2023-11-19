@@ -1,0 +1,91 @@
+body {
+    font-family: inherit;
+    background-color: #f4f4f4;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: -8px;
+    font-size: large;
+  }
+
+
+  h1 {
+    background-color: rgb(85, 79, 79);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+  }
+
+  hr {
+    border-top: 2px solid black;
+  }
+
+  li {
+    font-size: large;
+  }
+
+  p {
+    font-size: large;
+  }
+
+
+
+  h3 {
+    font-size: 18px;
+    color: #333;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  img {
+    border-radius: 5px;
+    width: 325px;
+    object-fit: cover;
+  }
+
+  .language-bar {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .language-progress {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  /* Adjust the width of .language-progress to indicate language proficiency */
+  .english-progress {
+    width: 90%; /* Example: 80% proficiency for English */
+    background-color: hsl(0, 2%, 31%);
+  }
+  .my-class {
+    padding-left: 4px;
+    color: #b6b4b4;
+  }
+
+  .arabic-progress {
+    width: 98%; 
+    background-color: hsl(0, 2%, 31%);
+  }
+  .Main-div{
+    display: flex; 
+    gap: 8px;
+  }
+  .black-div{
+    background-color: rgb(14, 12, 12);
+    float: left;
+  }

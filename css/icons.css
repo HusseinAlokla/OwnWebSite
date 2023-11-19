@@ -1,0 +1,32 @@
+.burger-ico{
+    background: url("../icons/burgermenu128p.png");
+   
+}
+
+.user-ico{
+    background: url("../icons/user.png");
+}
+
+.wallet-ico{
+    background: url("../icons/wallet.png");
+}
+
+.gallery-ico{
+    background: url("../icons/gallery.png");
+}
+.main-ico{
+    background: url("../icons/main.png");
+}
+.ico{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.ico-l{
+    width: 24px;
+    height: 24px;
+}
